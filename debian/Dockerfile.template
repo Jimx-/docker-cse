@@ -1,0 +1,12 @@
+FROM debian:%%VERSION%%
+
+ENV SOCKS_SERVER=socks5://socks.cse.cuhk.edu.hk:1080 \
+    http_proxy=http://proxy.cse.cuhk.edu.hk:8000 \
+    https_proxy=http://proxy.cse.cuhk.edu.hk:8000 \
+    HTTP_PROXY=http://proxy.cse.cuhk.edu.hk:8000 \
+    HTTPS_PROXY=http://proxy.cse.cuhk.edu.hk:8000 \
+    ftp_proxy=http://proxy.cse.cuhk.edu.hk:8000 \
+    socks_proxy=socks5://socks.cse.cuhk.edu.hk:1080 \
+    rsync_proxy=proxy.cse.cuhk.edu.hk:8000 \
+    no_proxy=cse.cuhk.edu.hk,localhost
+
